@@ -1,16 +1,114 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🍳 QuickMeal — Recipe Finder for Busy People
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**QuickMeal** is a simple and fast recipe finder designed for **Taylor**, a busy professional who wants to cook something easy when he gets home.
+Taylor can enter **any ingredient** he has — and the app instantly shows a list of meals he can cook using that ingredient.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+**[https://quick-meal-rose.vercel.app/](https://quick-meal-rose.vercel.app/)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Submission Links
+
+| Requirement                   | Link                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------ |
+| Level 1 — ChatGPT Work        | *(Insert ChatGPT conversation link here)*                                            |
+| Level 2 — Working Application | [https://quick-meal-rose.vercel.app/](https://quick-meal-rose.vercel.app/)           |
+| Level 3 — Code Repository     | [https://github.com/roshni2302/quick-meal](https://github.com/roshni2302/quick-meal) |
+
+---
+
+## 👤 User Persona
+
+**Name:** Taylor
+**Role:** Busy Professional
+**Goal:** Cook quickly based on available ingredients
+**Needs:** Simple, fast, minimal steps
+
+---
+
+## ✨ Features
+
+* Search meals by **ingredient**
+* Fetches recipes from **TheMealDB** public API
+* Clean and responsive UI
+* No login or setup needed — **just search and cook**
+
+---
+
+## 🧠 API Used
+
+**TheMealDB Filter by Ingredient API**
+
+```
+https://www.themealdb.com/api/json/v1/1/filter.php?i={ingredient}
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Component        | Technology     |
+| ---------------- | -------------- |
+| Framework        | React          |
+| Styling          | Tailwind CSS   |
+| Hosting          | Vercel         |
+| State Management | React useState |
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/roshni2302/quick-meal.git
+
+# Go into project folder
+cd quick-meal
+
+# Install dependencies
+npm install
+
+# Start the server
+npm run dev
+```
+
+App will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📂 Project Structure
+
+```
+quick-meal/
+├── src/
+│   ├── App.jsx
+│   ├── components/
+│   │   └── MealCard.jsx
+│   ├── index.css
+│   └── main.jsx
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## 🙌 Acknowledgements
+
+* Recipes provided by **TheMealDB API**
+* Built for learning & demonstrating **React + API Integration**
+
+---
+
+
+Just tell me: **Yes** 😄
