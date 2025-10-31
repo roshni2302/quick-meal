@@ -1,114 +1,76 @@
+# QuickMeal 🍳🥕🍅
 
+A simple and fast **recipe suggestion** application built for **Taylor**, a busy professional who wants to **cook quickly using the ingredients already at home**.
 
-# 🍳 QuickMeal — Recipe Finder for Busy People
-
-**QuickMeal** is a simple and fast recipe finder designed for **Taylor**, a busy professional who wants to cook something easy when he gets home.
-Taylor can enter **any ingredient** he has — and the app instantly shows a list of meals he can cook using that ingredient.
-
----
-
-## 🌐 Live Demo
-
-**[https://quick-meal-rose.vercel.app/](https://quick-meal-rose.vercel.app/)**
+This application lets the user:
+- Search recipes by ingredient name
+- View meal images and titles instantly
+- Open a recipe to view instructions and details
+- Use multiple ingredients to narrow results
 
 ---
 
-## 📌 Submission Links
+## 🌍 Live Demo
 
-| Requirement                   | Link                                                                                 |
-| ----------------------------- | ------------------------------------------------------------------------------------ |
-| Level 1 — ChatGPT Work        | *(Insert ChatGPT conversation link here)*                                            |
-| Level 2 — Working Application | [https://quick-meal-rose.vercel.app/](https://quick-meal-rose.vercel.app/)           |
-| Level 3 — Code Repository     | [https://github.com/roshni2302/quick-meal](https://github.com/roshni2302/quick-meal) |
+🔗 **https://quick-meal-rose.vercel.app/**
 
 ---
 
-## 👤 User Persona
+## 🧑‍💼 User Persona
 
-**Name:** Taylor
-**Role:** Busy Professional
-**Goal:** Cook quickly based on available ingredients
-**Needs:** Simple, fast, minimal steps
+| Field | Details |
+|------|---------|
+| **Name** | Taylor |
+| **Occupation** | Busy Professional |
+| **Need** | Quickly find meal ideas based on available ingredients |
+| **Solution** | A minimal web app that suggests recipes from TheMealDB |
+
+Taylor prefers:
+- Quick search results
+- Minimal UI
+- Simple step-by-step cooking instructions  
+This app directly fulfills those needs.
 
 ---
 
 ## ✨ Features
 
-* Search meals by **ingredient**
-* Fetches recipes from **TheMealDB** public API
-* Clean and responsive UI
-* No login or setup needed — **just search and cook**
+- ✅ Search recipes using **one or more ingredients**
+- ✅ View recipe images in a clean grid layout
+- ✅ Click a meal card to open full recipe + instructions
+- ✅ Responsive and mobile-friendly layout
+- ✅ No account, no setup — just search and cook
 
 ---
 
-## 🧠 API Used
+## 🔗 API Used
 
-**TheMealDB Filter by Ingredient API**
+This app uses **TheMealDB Public API** *(no API key required)*:
 
-```
-https://www.themealdb.com/api/json/v1/1/filter.php?i={ingredient}
-```
+- Search meals by ingredient:  
+  `https://www.themealdb.com/api/json/v1/1/filter.php?i={ingredient}`
+
+- Fetch recipe details by meal ID:  
+  `https://www.themealdb.com/api/json/v1/1/lookup.php?i={idMeal}`
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Tech Stack
 
-| Component        | Technology     |
-| ---------------- | -------------- |
-| Framework        | React          |
-| Styling          | Tailwind CSS   |
-| Hosting          | Vercel         |
+| Area | Technology |
+|------|------------|
+| Frontend Framework | React + Vite |
+| Styling | Tailwind CSS |
 | State Management | React useState |
+| Deployment | Vercel |
+| Version Control | Git & GitHub |
 
 ---
 
-## 🚀 How to Run Locally
+## 🖥️ How to Run Locally
 
 ```bash
-# Clone the repo
-git clone https://github.com/roshni2302/quick-meal.git
-
-# Go into project folder
+git clone https://github.com/roshni2302/quick-meal
 cd quick-meal
-
-# Install dependencies
 npm install
-
-# Start the server
 npm run dev
-```
-
-App will run at:
-
-```
-http://localhost:5173
-```
-
----
-
-## 📂 Project Structure
-
-```
-quick-meal/
-├── src/
-│   ├── App.jsx
-│   ├── components/
-│   │   └── MealCard.jsx
-│   ├── index.css
-│   └── main.jsx
-├── public/
-├── package.json
-└── README.md
-```
-
----
-
-## 🙌 Acknowledgements
-
-* Recipes provided by **TheMealDB API**
-* Built for learning & demonstrating **React + API Integration**
-
----
-
-
-Just tell me: **Yes** 😄
